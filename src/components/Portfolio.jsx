@@ -38,7 +38,7 @@ function Portfolio() {
           />
           <h1 className="text-xl sm:text-4xl font-bold mt-4">
             I'm <span className="text-yellow-400">Elizabeth</span>
-            <br /> A Web Developer
+            <br /> A Software Developer-Backend
           </h1>
         </div>
       </header>
@@ -52,7 +52,7 @@ function Portfolio() {
           <h1 className="text-lg font-semibold mb-4 text-purple-400">About Me</h1>
           <p className="text-sm leading-relaxed text-gray-300">
             My name is Elizabeth Muthoni, pursuing Bachelor of Science in Computer Science at Dedan Kimathi University of Technology.
-            I have a strong interest in backend web development and have worked on several projects using different languages.
+            Passionate about expanding technical skills and contributing to innovative projects that enhance technological advancements.
           </p>
         </div>
       </section>
@@ -91,6 +91,12 @@ function Portfolio() {
         <div className="flex flex-wrap justify-center gap-6">
           {[
             {
+              img: proj4,
+              title: "ElimuTuts",
+              desc: "Online learning platform.",
+              url: "https://elimu-tuts.vercel.app/",
+            },
+            {
               img: proj,
               title: "E-commerce Website",
               desc: "Clothing and Shoes Store",
@@ -108,6 +114,7 @@ function Portfolio() {
               desc: "Tracking employee data.",
               url: "https://github.com/muthonijulie/EmployeeManagementSystem",
             },
+         
           ].map((project, idx) => (
             <a
               key={idx}
