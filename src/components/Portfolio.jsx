@@ -90,12 +90,12 @@ function Portfolio() {
         <h2 className="text-2xl font-semibold mb-6 text-purple-400">Projects</h2>
         <div className="flex flex-wrap justify-center gap-6">
           {[
-            {
-              img: proj4,
-              title: "ElimuTuts",
-              desc: "Online learning platform.",
-              url: "https://elimu-tuts.vercel.app/",
-            },
+            // {
+            //   img: proj4,
+            //   title: "ElimuTuts",
+            //   desc: "Online learning platform.",
+            //   url: "https://elimu-tuts.vercel.app/",
+            // },
             {
               img: proj,
               title: "E-commerce Website",
