@@ -34,7 +34,7 @@ function Portfolio() {
     projectImages: {
       kazilink: "public/assets/kazilink.png",
       werent: werentImg,
-      elimu: elimupng,
+      elimututs: elimupng,
       wasafiret: "/images/projects/wasafiret.jpg",
       employee: "/images/projects/employee.jpg",
       blog: "/images/projects/blog.jpg"
