@@ -1,5 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Mail, Phone, Linkedin, Github, ExternalLink, ChevronDown, Code, Database, Shield, Brain, Users, MessageSquare, Wrench, Lightbulb, MapPin, Calendar, Award, User, BookOpen, Briefcase, Star } from 'lucide-react';
+import profilePhoto from '/src/assets/profile.jpg';
+import profilePng from '/src/assets/profile.png';
+import elimupng from '/src/assets/elimututs.png';
+import werentImg from '/src/assets/werent.png';
 
 function Portfolio() {
   const [activeSection, setActiveSection] = useState('home');
@@ -26,16 +30,17 @@ function Portfolio() {
 
   // Image paths - Add your actual image paths here
   const images = {
-    profilePhoto: "public/assets/profile.jpg", // Replace with your actual path
+    profilePhoto: profilePhoto, 
     projectImages: {
-      kazilink: "/images/projects/kazilink.jpg",
-      werent: "public/assets/werent.png",
-      elimututs: "public/assets/elimututs.png",
+      kazilink: "public/assets/kazilink.png",
+      werent: werentImg,
+      elimu: elimupng,
       wasafiret: "/images/projects/wasafiret.jpg",
       employee: "/images/projects/employee.jpg",
       blog: "/images/projects/blog.jpg"
+      
     },
-    aboutImage: "public/assets/profile.png" 
+    aboutImage:profilePng,
   };
 
   const skills = [
