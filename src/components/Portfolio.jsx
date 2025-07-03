@@ -26,16 +26,16 @@ function Portfolio() {
 
   // Image paths - Add your actual image paths here
   const images = {
-    profilePhoto: "src/assets/profile.jpg", // Replace with your actual path
+    profilePhoto: "public/assets/profile.jpg", // Replace with your actual path
     projectImages: {
       kazilink: "/images/projects/kazilink.jpg",
-      werent: "src/assets/werent.png",
-      elimututs: "src/assets/elimututs.png",
+      werent: "public/assets/werent.png",
+      elimututs: "public/assets/elimututs.png",
       wasafiret: "/images/projects/wasafiret.jpg",
       employee: "/images/projects/employee.jpg",
       blog: "/images/projects/blog.jpg"
     },
-    aboutImage: "src/assets/profile.png" 
+    aboutImage: "public/assets/profile.png" 
   };
 
   const skills = [
