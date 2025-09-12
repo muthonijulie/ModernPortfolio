@@ -44,14 +44,14 @@ function Portfolio() {
   };
 
   const skills = [
-    { name: 'JavaScript', icon: Code, level: 70 },
-    { name: 'Python', icon: Code, level: 80 },
-    { name: 'Java', icon: Code, level: 60 },
-    { name: 'PHP', icon: Code, level: 55 },
+    { name: 'JavaScript', icon: Code, level: 50 },
+    { name: 'Python', icon: Code, level: 60 },
+    { name: 'Java', icon: Code, level: 40 },
+    { name: 'PHP', icon: Code, level: 30 },
     { name: 'Database Systems', icon: Database, level: 65 },
-    { name: 'Cybersecurity', icon: Shield, level: 70 },
-    { name: 'Machine Learning', icon: Brain, level: 55 },
-    { name: 'API Development', icon: Wrench, level: 55 }
+    { name: 'Cybersecurity', icon: Shield, level: 60 },
+    { name: 'Machine Learning', icon: Brain, level: 50 },
+    { name: 'API Development', icon: Wrench, level: 50 }
   ];
 
   const projects = [
@@ -132,6 +132,17 @@ function Portfolio() {
         "Enterprise Resource Planning implementation",
         "System enhancement according to agency needs"
       ]
+    },
+    {
+      company:"Power Learn Project",
+      role:"Volunteer",
+      period:"July 2025 -October 2025",
+      responsibilities:[
+        "Tutor learners on project development",
+        "Assist in supporting learners",
+        "Participate in events and workshops",
+      ]
+
     }
   ];
 
