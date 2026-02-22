@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Mail, Phone, Linkedin, Github, ExternalLink, ChevronDown, Code, Database, Shield, Brain, Users, MessageSquare, Wrench, Lightbulb, MapPin, Calendar, Award, User, BookOpen, Briefcase, Star } from 'lucide-react';
-import profilePhoto from '/src/assets/profile.jpg';
-import profilePng from '/src/assets/profile.png';
+import profilePhoto from '/src/assets/profile.jpeg';
+
 import elimupng from '/src/assets/elimututs.png';
 import werentImg from '/src/assets/werent.png';
 
