@@ -8,7 +8,7 @@ import Project from './pages/Project'
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/ModernPortfolio">
      <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/experience" element={<Experience />} />

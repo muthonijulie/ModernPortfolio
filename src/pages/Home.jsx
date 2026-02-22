@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import profilePhoto from "../assets/profile.jpeg";
 import CV from "../assets/Elizabeth_Muthoni_CV  .pdf";
-import project  from "../pages/Project.jsx";
 const PRIMARY = "#8c2bee";
 
 const NAV_LINKS = [
@@ -134,7 +133,7 @@ export default function Home() {
               {/* CTAs */}
               <div className="hero-ctas" style={{ display: "flex", flexWrap: "wrap", gap: 14 }}>
                 <a
-  href={project}
+  href="/project"
   className="cta-primary"
   style={{
     display: "inline-flex",
