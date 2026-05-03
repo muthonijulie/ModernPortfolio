@@ -2,7 +2,8 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import profilePhoto from "../assets/profile.jpeg";
-import CV from "../assets/Elizabeth_Muthoni_CV  .pdf";
+import CV from "../assets/Elizabeth_Muthoni_CV .pdf";
+import CVFr from "../assets/CV - Elizabeth Julius.pdf";
 const PRIMARY = "#8c2bee";
 
 const NAV_LINKS = [
@@ -22,15 +23,14 @@ const TECH = [
   {icon: "storage", label: "PostgreSQL"        },
   {icon: "code", label: "FastAPI"        },
   {icon: "code", label: "Django"        },
+  {icon: "code", label: "CSS"        },
+  {icon: "code", label: "HTML"        },
+  {icon: "code", label: "C++"        },
 
 ];
 
 const CARDS = [
-  { 
-  icon: "insights",        
-  title: "Analytical and results-driven",  
-  desc: "A strong passion for numbers and structured thinking. I approach problems analytically, break them down efficiently and build solutions that are both technically sound and business-focused." 
-},
+  
 { 
   icon: "code", 
   title: "Backend-Focused Engineer",    
@@ -40,7 +40,35 @@ const CARDS = [
   icon: "groups",     
   title: "Leadership and team collaboration",  
   desc: "Strong communicator with experience working in teams, managing responsibilities and refining projects through peer feedback. I thrive in collaborative environments and contribute beyond just writing code." 
+},
+{ 
+  icon: "insights",        
+  title: "Analytical and results-driven",  
+  desc: "A strong passion for numbers and structured thinking. I approach problems analytically, break them down efficiently and build solutions that are both technically sound and business-focused." 
 }
+];
+const HOBBIES = [
+   {
+    icon: "event_note",
+    label: "Planning & Organizing",
+    desc: "I genuinely enjoy bringing order to chaos whether it's a project,event or even myself. I enjoy planning."
+  },
+  {
+    icon: "headphones",
+    label: "Music",
+    desc: "Always have something playing. Music keeps me energized and focused."
+  },
+  {
+    icon: "flight_takeoff",
+    label: "Travel",
+    desc: "New places, new perspectives. I collect experiences the same way I collect skills."
+  },
+  {
+    icon: "restaurant",
+    label: "Cooking",
+    desc: "Cooking is just backend engineering with better smells. I enjoy cooking as a way to reconnect with self after a long day"
+  },
+ 
 ];
 
 export default function Home() {
@@ -126,7 +154,7 @@ export default function Home() {
 
               {/* Subtitle */}
               <p style={{ fontSize: "clamp(14px, 1.5vw, 17px)", color: muted, maxWidth: 520, lineHeight: 1.78, marginBottom: 40 }}>
-                Computer Science professional with a strong foundation in software engineering, cybersecurity and machine learning. Passionate about advancing secure computing systems. Experienced in contributing to research-driven projects, developing scalable backend systems and communicating technical insights effectively.
+                Computer Science professional with a strong foundation in software engineering and machine learning. Passionate about advancing secure computing systems. Experienced in contributing to research-driven projects, developing scalable backend systems and communicating technical insights effectively.
 
               </p>
 
@@ -173,6 +201,11 @@ export default function Home() {
     cursor: "pointer"
   }}
 >
+<a href={CVFr} download className="cta-secondary"
+  style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "0 30px", height: 52, borderRadius: 6, border: `2px solid ${border}`, backgroundColor: "transparent", color: text, fontWeight: 700, fontSize: 16, textDecoration: "none", cursor: "pointer" }}>
+  <span className="material-symbols-outlined" style={{ fontSize: 20 }}>description</span>
+  CV en Français
+</a>
   <span className="material-symbols-outlined" style={{ fontSize: 20 }}>
     description
   </span>
@@ -249,6 +282,49 @@ export default function Home() {
           ))}
         </div>
       </section>
+      {/* ── Hobbies ── */}
+<section style={{ maxWidth: 1100, margin: "0 auto", padding: "0 40px 80px", width: "100%", position: "relative", zIndex: 10 }}>
+  <div style={{ marginBottom: 40 }}>
+    <p style={{ fontSize: 10, fontWeight: 700, color: muted, textTransform: "uppercase", letterSpacing: "0.22em", marginBottom: 10, textAlign: "center" }}>
+      Outside the terminal
+    </p>
+    <h2 style={{ fontSize: "clamp(24px, 3vw, 36px)", fontWeight: 800, color: text, textAlign: "center", letterSpacing: "-0.03em" }}>
+      When I'm not writing code
+    </h2>
+  </div>
+
+  <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: 18 }}>
+    {HOBBIES.map(({ icon, label, desc }) => (
+      <div
+        key={label}
+        className="phi-card"
+        style={{
+          padding: "28px 24px",
+          borderRadius: 10,
+          backgroundColor: surface,
+          border: `1px solid ${border}`,
+          display: "flex",
+          flexDirection: "column",
+          gap: 14,
+        }}
+      >
+        <div style={{
+          width: 44, height: 44, borderRadius: 8,
+          backgroundColor: "rgba(140,43,238,0.08)",
+          border: "1px solid rgba(140,43,238,0.15)",
+          display: "flex", alignItems: "center", justifyContent: "center",
+          color: PRIMARY,
+        }}>
+          <span className="material-symbols-outlined" style={{ fontSize: 22 }}>{icon}</span>
+        </div>
+        <div>
+          <h3 style={{ fontSize: 15, fontWeight: 700, color: text, marginBottom: 6 }}>{label}</h3>
+          <p style={{ fontSize: 13, color: muted, lineHeight: 1.7 }}>{desc}</p>
+        </div>
+      </div>
+    ))}
+  </div>
+</section>
 
       {/* ── Footer ── */}
       <footer style={{ borderTop: `1px solid ${border}`, padding: "32px 40px", backgroundColor: dark ? "rgba(19,19,22,0.6)" : "#f1f5f9", position: "relative", zIndex: 10 }}>

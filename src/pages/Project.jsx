@@ -7,6 +7,7 @@ import elimupng from '/src/assets/elimututs.png';
 import werentImg from '/src/assets/werent.png';
 import Dael from "../assets/Dael.png";
 import intellimark from "../assets/Intellimark.png";
+import diabetes from "../assets/Diabetes.png";
 const PRIMARY = "#8c2bee";
 
 const NAV_LINKS = [
@@ -15,6 +16,9 @@ const NAV_LINKS = [
   { label: "Experience", to: "/experience" },
 ];
 const PROJECTS = [
+   {tags: ["Python","FastAPI","CSS","HTML"], title: "Diabetes Prediction",badge: "Research",
+    desc: "A deep learning model using FastAPI to predict diabetes risk based on health data, with a user-friendly interface for real-time predictions and insights.",
+    image: diabetes},
    {tags: ["Python","PostgreSQL","NextJs","Flask"], title: "Intelllimark",badge: "Production",
     desc: "An edtech system designed to reduce workload for the lecturers and automate processes for lecturers and students.",
     image: intellimark},
@@ -36,7 +40,7 @@ const PROJECTS = [
     image: Ecomm },
 ];
 
-const FILTERS = ["All Projects","React Js","Next Js","Python","Node.js","PostgreSQL","MongoDB","FastAPI","Java","AWS","Django"];
+const FILTERS = ["All Projects","React Js","Next Js","Python","Node.js","PostgreSQL","MongoDB","FastAPI","Java","AWS","Django","CSS","HTML","C++"];
 
 export default function Projects() {
   const [filter, setFilter] = useState("All Projects");

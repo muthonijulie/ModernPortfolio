@@ -13,6 +13,17 @@ const NAV_LINKS = [
 ];
 
 const EXPERIENCES = [
+  {
+    title: "Freelance Backend Developer — Web & Backend Projects", period: "2024 — Present",
+    company: "Online", icon: "computer", active: true,
+    bullets: [
+      "Designed and developed web solutions for multiple clients",
+      "Built a residence management system (user and data management)",
+      "Developed a crypto-related web platform (backend architecture and API integration)",
+      "Created a declutter/organization platform for managing personal items",
+      "Applied best practices in API design, security, and system scalability"
+    ],
+  },
    {
     title: "Volunteer support and mentor", period: "2025 — Present",
     company: "Power Learn Project Academy", icon: "school", active: true,
